@@ -1,0 +1,110 @@
+<!DOCTYPE html>  
+<html>  
+<head>
+<meta charset="UTF-8" />
+<style>  
+    body{  
+        font-family: Calibri, Helvetica, sans-serif;  
+        background-color: paleturquoise;  
+    }  
+
+    hr {  
+        border: 1px solid #f1f1f1;  
+        margin-bottom: 25px;  
+    }
+
+    div {
+        padding: 10px 0;
+    }
+ 
+    input[type=text], textarea {  
+        background: #f1f1f1;
+        border: none;
+        display: inline-block;
+        margin: 5px 0 22px 0;
+        padding: 15px;  
+        width: 100%;    
+    }
+
+    input[type=text]:focus {  
+        background-color: paleturquoise;  
+        outline: none;  
+    }
+
+    .container {  
+        padding: 50px;  
+        background-color: lightblue;  
+    }
+    
+    .registerbtn {  
+        background-color: paleturquoise;  
+        border: none;  
+        color: black;  
+        cursor: pointer;  
+        padding: 16px 20px;  
+        margin: 8px 0;  
+        opacity: 0.9; 
+        width: 15%;  
+    }  
+    .registerbtn:hover {  
+         opacity: 1;  
+    }  
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1> <img src="register_img.png" alt="Autumn" width="200"> </h1> </center>  
+  <p align="right">  
+    <a href = "http://www.google.com" target="_blank">Help </a>
+  </p> 
+  <hr>  
+  
+    <label> Firstname </label>   
+    <input type="text" name="firstname" placeholder= "Firstname" size="10" required />   
+    <label> Middlename: </label>   
+    <input type="text" name="middlename" placeholder="Middlename" size="10" required />   
+    <label> Lastname: </label>    
+    <input type="text" name="lastname" placeholder="Lastname" size="10"required />   
+    <div>  
+        <label>Gender : </label>
+        <br>  
+        <input type="radio" value="Male" name="gender" checked > Male   
+        <input type="radio" value="Female" name="gender"> Female   
+    </div>  
+    <div>  
+        <label>Course : </label>   
+        <select>  
+            <option value="Course">Course</option>  
+            <option value="java">Java/J2EE</option>  
+            <option value="springboot">SpringBoot</option>  
+            <option value="react">ReactJS</option>  
+            <option value="gcp">GCP</option>  
+        </select>  
+    </div>  
+    <label>Phone :  </label>  
+    <input type="text" name="phone" placeholder="phone" size="10"/ required>   
+    Address :  
+    <textarea cols="80" rows="5" placeholder="Address" value="address" required>  
+    </textarea>  
+    <label for="email"><b>Email</b></label>  
+    <input type="text" placeholder="Enter Email" name="email" required>  
+    <fieldset>      
+        <legend>Hobbies</legend>      
+        <input type="checkbox" name="hobbies" value="Reading">Reading<br>      
+        <input type="checkbox" name="hobbies" value="Playing">Playing<br>      
+        <input type="checkbox" name="hobbies" value="Shopping">Shopping<br>      
+    </fieldset>
+    
+    <div>
+        <video width="400" height="200" controls="controls">
+            <!--add source tag to play video-->
+           Sample Video
+        </video>
+    </div>      
+    <div style="text-align: center;">
+        <button type="submit" class="registerbtn">Register</button>    
+    </div>
+</form>  
+</body>  
+</html>  
